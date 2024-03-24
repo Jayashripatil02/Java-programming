@@ -1,0 +1,23 @@
+Practical NO:- 3
+public class CommandLineArgsExample
+{
+   public static void main(String[] args)
+    {
+	System.out.println("Below are argument pass to program");
+	for(String a:args)
+	{
+	   System.out.println(a);
+        }
+    }
+}
+
+OUTPUT:-
+Microsoft Windows [Version 10.0.22000.1574]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\shukr\OneDrive\Desktop\Exception>javac CommandLineArgsExample.java
+
+C:\Users\shukr\OneDrive\Desktop\Exception>java CommandLineArgsExample
+Below are argument pass to program
+
+C:\Users\shukr\OneDrive\Desktop\Exception>

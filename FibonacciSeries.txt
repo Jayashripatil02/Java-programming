@@ -1,0 +1,49 @@
+Practical NO:- 1
+import java.sql.SQLOutput;
+import java.util.Scanner;
+class FibonacciSeries
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Number=");
+        int count=sc.nextInt();
+        int n1=0;
+        int n2=1;
+        System.out.println(n1);
+        System.out.println(n2);
+
+        for(int i=2; i<count; i++)
+        {
+            int temp=n1;
+            n1 = n2;
+            n2=temp + n2;
+            System.out.println(n2);
+        }
+    }
+}
+OUTPUT:
+C:\Users\jayashri\.jdks\openjdk-21.0.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\lib\idea_rt.jar=53354:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath J:\firstjava\out\production\firstjava FibonacciSeries
+Enter Number=20
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
+610
+987
+1597
+2584
+4181
+
+Process finished with exit code 0
