@@ -1,0 +1,37 @@
+Practical NO:- 5
+package school;
+public class Student {
+    public String name;
+    public String dob;
+    public int rollno;
+    public void show()
+    {
+        System.out.println("Nme="+this.name);
+        System.out.println("DOB="+this.dob);
+        System.out.println("Rollno="+this.rollno);
+    }
+}
+Compile : javac -d . Student.java
+import school.Student;
+public class StudentManager {
+    public static void main(String[] args) {
+        Student s=new Student();
+        s.name="jayu";
+        s.dob="2/12/2004";
+        s.rollno=35;
+        s.show();
+    }
+}
+
+OUTPUT:-
+Microsoft Windows [Version 10.0.22000.1574]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\jayashri\OneDrive\Desktop\Javapackages>javac StudentManager.java
+
+C:\Users\jayashri\OneDrive\Desktop\Javapackages>java StudentManager
+Nme=jayu
+DOB=2/12/2004
+Rollno=35
+
+C:\Users\jayashri\OneDrive\Desktop\Javapackages>
